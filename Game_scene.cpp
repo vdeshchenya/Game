@@ -5,7 +5,7 @@
 
 Game_scene::Game_scene(const int &width_, const int &height_, RenderWindow &window) : Scene(width_, height_),
                                                                                       fieldh(300),
-                                                                                      fieldw(200) {
+                                                                                      fieldw(300) {
   System.Init(R);
 }
 
@@ -23,8 +23,8 @@ void Game_scene::keyRelease(Keyboard::Key &code) {
       break;
     }
     case Keyboard::A: {
-      for (int i = 0; i < 100; ++i)
-        System.Add((1 + i % 10) * fieldw / 11, fieldh * (1 + i / 10) / 20);
+      for (int i = 0; i < 900; ++i)
+        System.Add((1 + i % 30) * fieldw / 31, fieldh * (1 + i / 30) / 31);
       break;
     }
     default: break;

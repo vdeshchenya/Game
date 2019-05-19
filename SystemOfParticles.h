@@ -22,6 +22,6 @@ class SystemOfParticles {
   size_t N = 0;
   double dt = 0.5;
   double rc = 10;
-  double g = -0.03;
+  double g = -0.001;
   double R2;
 };

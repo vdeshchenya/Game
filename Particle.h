@@ -3,13 +3,13 @@
 
 class Particle {
  public:
-  Particle(const int& m_ = 1, const double& b_ = 0.5) : m(m_), b(b_) {};
+  Particle(const int& m_ = 1, const double& b_ = 0.6) : m(m_), b(b_) {};
   Vector position;
   Vector speed;
   Vector acceleration;
   Vector new_acceleration;
   int m = 1;
-  double b = 0.6;
+  double b = 1;
 };
 
 Vector GetForceLD(const Particle &a, const Particle &b, const double& rc, const double& R2);
