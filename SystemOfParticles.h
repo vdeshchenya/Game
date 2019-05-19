@@ -18,10 +18,10 @@ class SystemOfParticles {
   const Vector &GetIPosition(const int &i) const;
   const size_t &GetNumbersOfParticles() const;
  private:
-  std::vector<Particle> data;
+  Particle *data;
   size_t N = 0;
   double dt = 0.5;
-  double rc = 7;
+  double rc = 10;
   double g = -0.03;
   double R2;
 };
